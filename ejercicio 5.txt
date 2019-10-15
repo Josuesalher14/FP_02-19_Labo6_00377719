@@ -1,0 +1,29 @@
+print("\tBIENVENIDO.")
+print("1. Realizar un deposito.")
+print("2. Realizar un retiro.")
+print("3. Salir.")
+print()
+opc = int(input("Ingrese un opcion del menu: "))
+
+saldo=1000 #aqui se encuentra declarado el valor del saldo inicial
+
+print() #es para hacer un salto de linea
+
+if opc==1: #para hacer un deposito
+    depo = float(input("ingrese la cantidad que desea depositar: $"))
+    print("La transaccion se ha realizado con exito.")
+    print("su nuevo saldo es $" + str(saldo+depo))
+
+elif opc==2: #para hacer un retiro
+    reti = float(input("ingrese la cantidad que desea retirar: $"))
+    if reti>saldo: #en el caso que se ingrese una cantidad mayor al saldo inicial
+        print("usted no posee saldo suficiente en su cuenta.")
+    else:
+        print("transaccion exitosa.")
+        print("su nuevo saldo es $" + str(saldo-reti))
+
+elif opc==3: #para salir del cajero
+    print("gracias por visitarnos.")
+    
+else: #caso que se digite una opcion equivocada
+    print("Error. Por favor ingrese una opcion valida.")

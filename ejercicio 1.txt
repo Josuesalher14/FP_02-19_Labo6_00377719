@@ -1,0 +1,9 @@
+a = float(input("ingrese el precio de la primera pelicula: $"))
+b = float(input("ingrese el precio de la segunda pelicula $"))
+c = float(input("ingrese el precio de la tercera pelicula $"))
+if (a>b and a>c):
+    print("su total a pagar es $"+ str(b+c))
+elif(b>a and b>c):
+    print("su total a pagar es $"+ str(a+c))
+else:
+    print("su total a pagar es $"+ str(a+b))

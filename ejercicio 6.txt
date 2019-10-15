@@ -1,0 +1,6 @@
+num = int(input("ingrese un numero de dos cifras: "))
+
+cif1 = int(num / 10) #esta variable nos devuelve el cociente de la division
+cif2 = num % 10 #esta nos devuelve el residuo de la operacion
+
+print(str(cif2)+str(cif1)) #se concatenan las variables, de modo que el numero ingresado se invierta

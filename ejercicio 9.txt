@@ -1,0 +1,8 @@
+print("\tMultiplos de un numero")
+print()
+num1=int(input("ingresar un numero: "))
+num2=int(input("ingresar el numero de multiplos"))
+print()
+
+for i in range(num1, (num1*num2)+1, num1):
+    print (str(i)+ ", ")

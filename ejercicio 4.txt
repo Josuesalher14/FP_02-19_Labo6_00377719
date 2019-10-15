@@ -1,0 +1,13 @@
+from random import *
+x = randrange(1,10)
+cont=0
+y=0
+while (x != y):
+    y = int(input("ingrese un numero entre 1 y 10 "))
+    if(y>x):
+        print("ingrese un numero menor")
+    elif(y<x):
+        print("ingrese un numero mayor")
+    cont += 1
+print("lo has logrado")
+print("tu numero de intentos fue " +str(cont))
